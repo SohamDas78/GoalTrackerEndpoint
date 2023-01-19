@@ -4,11 +4,11 @@ namespace GoalTrackerEndpoint.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class TestController : ControllerBase
+    public class UserController : ControllerBase
     {
-        private readonly ILogger<TestController> _logger;
+        private readonly ILogger<UserController> _logger;
 
-        public TestController(ILogger<TestController> logger)
+        public UserController(ILogger<UserController> logger)
         {
             _logger = logger;
         }
