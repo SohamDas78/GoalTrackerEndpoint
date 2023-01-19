@@ -1,3 +1,6 @@
+using GoalTrackerEndpoint.Models;
+using Microsoft.EntityFrameworkCore;
+
 namespace GoalTrackerEndpoint
 {
     public class Program
@@ -12,6 +15,9 @@ namespace GoalTrackerEndpoint
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddScoped<UserContext>(); // Context class scoped
+            builder.Services.AddDbContext<UserContext>(opt => opt.UseSqlServer(builder.Configuration.GetValue<string>("AppSettings:DatabaseConnectionString")));
 
             var app = builder.Build();
 
