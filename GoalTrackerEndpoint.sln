@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoalTrackerEndpoint", "GoalTrackerEndpoint\GoalTrackerEndpoint.csproj", "{91EDBC9E-976F-4E06-8374-EE40360121C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91EDBC9E-976F-4E06-8374-EE40360121C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91EDBC9E-976F-4E06-8374-EE40360121C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91EDBC9E-976F-4E06-8374-EE40360121C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91EDBC9E-976F-4E06-8374-EE40360121C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4089D6A0-5358-4F0B-AFF5-C7A8003590A0}
+	EndGlobalSection
+EndGlobal
