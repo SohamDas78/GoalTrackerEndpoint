@@ -16,11 +16,27 @@ namespace GoalTrackerEndpoint.Controllers
             userContext= userctx;
         }
 
-        [HttpPost(Name = "Fetch")]
+        [HttpPost]
         [Route("Fetch")]
         public IEnumerable<User> Get()
         {
             return userContext.Users.ToList();
+        }
+
+        [HttpPost]
+        [Route("Signup")]
+        public async Task<string> Signup(UserReadModel user)
+        {
+            try
+            {
+                await userContext.Users.AddAsync(new User() { UserId = Guid.NewGuid(), UserName = user.UserName, Password = user.Password });
+                await userContext.SaveChangesAsync();
+                return "Success";
+            }
+            catch(Exception ex)
+            {
+                return $"Failed - {ex.Message}";
+            }
         }
     }
 }
